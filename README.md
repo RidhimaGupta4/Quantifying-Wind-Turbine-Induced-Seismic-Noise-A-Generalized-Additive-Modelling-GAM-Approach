@@ -1,9 +1,9 @@
 # Quantifying Wind Turbine-Induced Seismic Noise: A Statistical Modelling Approach
 
-[cite_start]This repository contains the analytical framework and R code for my dissertation project, focused on the **Eskdalemuir Seismological Array (EKA)**[cite: 9, 18]. [cite_start]The project develops a robust statistical method to isolate and quantify seismic energy directly attributable to wind turbine activity using **Generalized Additive Models (GAMs)**[cite: 31, 632].
+This repository contains the analytical framework and R code for my dissertation project, focused on the **Eskdalemuir Seismological Array (EKA)**[cite: 9, 18]. The project develops a robust statistical method to isolate and quantify seismic energy directly attributable to wind turbine activity using **Generalized Additive Models (GAMs)**[cite: 31, 632].
 
 ## 📌 Project Overview
-[cite_start]The UK’s Net-Zero Strategy requires doubling on-shore wind capacity by 2030[cite: 73, 75]. [cite_start]However, modern turbines near the EKA can emit ground vibrations (0.5–8 Hz) that potentially mask low-magnitude nuclear signals[cite: 125, 126]. [cite_start]This study provides a regulator-ready tool to quantify these effects and ensure compliance with the **0.336 nm RMS displacement** statutory limit[cite: 36, 128].
+The UK’s Net-Zero Strategy requires doubling on-shore wind capacity by 2030[cite: 73, 75]. However, modern turbines near the EKA can emit ground vibrations (0.5–8 Hz) that potentially mask low-magnitude nuclear signals[cite: 125, 126]. [cite_start]This study provides a regulator-ready tool to quantify these effects and ensure compliance with the **0.336 nm RMS displacement** statutory limit[cite: 36, 128].
 
 ---
 
