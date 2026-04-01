@@ -8,13 +8,13 @@
 ---
 
 ## 🛠 Data Processing Pipeline
-[cite_start]The following pipeline was developed to transform high-rate raw seismic traces into a policy-relevant log-energy response variable[cite: 356]:
+The following pipeline was developed to transform high-rate raw seismic traces into a policy-relevant log-energy response variable[cite: 356]:
 
 1.  **High-Rate Traces**: Raw velocity signals sampled at 100 Hz over 10-minute blocks[cite: 318, 332].
 2.  **Spectral Transformation**: Conversion of traces into Power Spectral Density (PSD) using Welch’s method[cite: 325, 335].
 3.  **Filtering & Weighting**: Trimming to the 0.5–8 Hz band and applying a Frequency-Domain Weighting Function (FDWF)[cite: 336, 368].
 4.  **Integration**: Summing weighted PSD values to compute total seismic energy ($E$)[cite: 379, 380].
-5.  [cite_start]**Normalization**: Applying a $log_{10}$ transform to stabilize variance for Gaussian modeling[cite: 383, 389].
+5.  **Normalization**: Applying a $log_{10}$ transform to stabilize variance for Gaussian modeling[cite: 383, 389].
 6.  **Metadata Tagging**: Appending synchronized wind speed, direction, and turbine operational status[cite: 392, 396].
 
 ---
@@ -22,7 +22,7 @@
 ## 📈 Model Development & Selection
 A forward-selection workflow was used to build the final Generalized Additive Model (GAM). [cite_start]Each iteration was evaluated based on the reduction in **Akaike Information Criterion (AIC)**[cite: 711, 854].
 
-### [cite_start]Model Comparison Table [cite: 712]
+### Model Comparison Table [cite: 712]
 | Model ID | Full Equation / Terms Added | $\Delta$ AIC (Relative) |
 | :--- | :--- | :--- |
 | **$M_1$** | Baseline: Operational Status only | -89.19 |
@@ -42,6 +42,6 @@ A forward-selection workflow was used to build the final Generalized Additive Mo
 * **Directional Sensitivity**: South-westerly winds produced higher energy readings due to the physical alignment between turbines and sensors[cite: 28, 534].
 
 ## 🚀 Repository Structure
-* [cite_start]`/data`: Metadata and engineered block-level datasets[cite: 323, 1127].
-* [cite_start]`/scripts`: R implementation using the `mgcv` package for REML-based smoothing[cite: 63, 752].
-* [cite_start]`/plots`: Visual diagnostics including Q-Q plots and partial effect curves[cite: 68, 780].
+* `/data`: Metadata and engineered block-level datasets[cite: 323, 1127].
+* `/scripts`: R implementation using the `mgcv` package for REML-based smoothing[cite: 63, 752].
+* `/plots`: Visual diagnostics including Q-Q plots and partial effect curves[cite: 68, 780].
