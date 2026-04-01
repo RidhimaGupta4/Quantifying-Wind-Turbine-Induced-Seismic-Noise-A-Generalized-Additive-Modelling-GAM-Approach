@@ -10,12 +10,12 @@
 ## 🛠 Data Processing Pipeline
 [cite_start]The following pipeline was developed to transform high-rate raw seismic traces into a policy-relevant log-energy response variable[cite: 356]:
 
-1.  [cite_start]**High-Rate Traces**: Raw velocity signals sampled at 100 Hz over 10-minute blocks[cite: 318, 332].
-2.  [cite_start]**Spectral Transformation**: Conversion of traces into Power Spectral Density (PSD) using Welch’s method[cite: 325, 335].
-3.  [cite_start]**Filtering & Weighting**: Trimming to the 0.5–8 Hz band and applying a Frequency-Domain Weighting Function (FDWF)[cite: 336, 368].
-4.  [cite_start]**Integration**: Summing weighted PSD values to compute total seismic energy ($E$)[cite: 379, 380].
+1.  **High-Rate Traces**: Raw velocity signals sampled at 100 Hz over 10-minute blocks[cite: 318, 332].
+2.  **Spectral Transformation**: Conversion of traces into Power Spectral Density (PSD) using Welch’s method[cite: 325, 335].
+3.  **Filtering & Weighting**: Trimming to the 0.5–8 Hz band and applying a Frequency-Domain Weighting Function (FDWF)[cite: 336, 368].
+4.  **Integration**: Summing weighted PSD values to compute total seismic energy ($E$)[cite: 379, 380].
 5.  [cite_start]**Normalization**: Applying a $log_{10}$ transform to stabilize variance for Gaussian modeling[cite: 383, 389].
-6.  [cite_start]**Metadata Tagging**: Appending synchronized wind speed, direction, and turbine operational status[cite: 392, 396].
+6.  **Metadata Tagging**: Appending synchronized wind speed, direction, and turbine operational status[cite: 392, 396].
 
 ---
 
@@ -32,14 +32,14 @@ A forward-selection workflow was used to build the final Generalized Additive Mo
 | **$M_6$** | Added Hourly Cyclic Smooth $s^{cyc}(Hour)$ | -147.85 |
 | **$M_7$ (Full)** | **Added Operational interaction $s(WindSpeed, by=Op)$** | **Best Fit** |
 
-[cite_start]**Key Insight**: The final model achieved an **Adjusted $R^2$ of 0.987**, explaining **99.1% of the deviance** in measurements[cite: 977].
+**Key Insight**: The final model achieved an **Adjusted $R^2$ of 0.987**, explaining **99.1% of the deviance** in measurements[cite: 977].
 
 ---
 
 ## 📊 Key Findings
-* [cite_start]**Significant Uplift**: Turbine operation is associated with a statistically significant increase in seismic energy, representing a relative increase of approximately 20%[cite: 22, 994].
-* [cite_start]**Regulatory Compliance**: Even at peak operation, turbine-induced ground motion reached only **53% of the allowed limit** (0.1771 nm observed vs. 0.336 nm limit)[cite: 24, 1036].
-* [cite_start]**Directional Sensitivity**: South-westerly winds produced higher energy readings due to the physical alignment between turbines and sensors[cite: 28, 534].
+* **Significant Uplift**: Turbine operation is associated with a statistically significant increase in seismic energy, representing a relative increase of approximately 20%[cite: 22, 994].
+* **Regulatory Compliance**: Even at peak operation, turbine-induced ground motion reached only **53% of the allowed limit** (0.1771 nm observed vs. 0.336 nm limit)[cite: 24, 1036].
+* **Directional Sensitivity**: South-westerly winds produced higher energy readings due to the physical alignment between turbines and sensors[cite: 28, 534].
 
 ## 🚀 Repository Structure
 * [cite_start]`/data`: Metadata and engineered block-level datasets[cite: 323, 1127].
