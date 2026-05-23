@@ -37,11 +37,6 @@ A forward-selection workflow was used to build the final Generalized Additive Mo
 ---
 
 ## 📊 Key Findings
-* **Significant Uplift**: Turbine operation is associated with a statistically significant increase in seismic energy, representing a relative increase of approximately 20%[cite: 22, 994].
-* **Regulatory Compliance**: Even at peak operation, turbine-induced ground motion reached only **53% of the allowed limit** (0.1771 nm observed vs. 0.336 nm limit)[cite: 24, 1036].
-* **Directional Sensitivity**: South-westerly winds produced higher energy readings due to the physical alignment between turbines and sensors[cite: 28, 534].
-
-## 🚀 Repository Structure
-* `/data`: Metadata and engineered block-level datasets[cite: 323, 1127].
-* `/scripts`: R implementation using the `mgcv` package for REML-based smoothing[cite: 63, 752].
-* `/plots`: Visual diagnostics including Q-Q plots and partial effect curves[cite: 68, 780].
+* **Significant Uplift**: Turbine operation is associated with a statistically significant increase in seismic energy, representing a relative increase of approximately 20%.
+* **Regulatory Compliance**: Even at peak operation, turbine-induced ground motion reached only **53% of the allowed limit** (0.1771 nm observed vs. 0.336 nm limit).
+* **Directional Sensitivity**: South-westerly winds produced higher energy readings due to the physical alignment between turbines and sensors.
